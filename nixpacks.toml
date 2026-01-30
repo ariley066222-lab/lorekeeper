@@ -11,8 +11,7 @@ nixPkgs = [
     "php81Extensions.zip",
     "php81Extensions.intl",
     "php81Packages.composer",
-    "nodejs-18_x",
-    "yarn"
+    "nodejs-16_x"
 ]
 
 [phases.install]
