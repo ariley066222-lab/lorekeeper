@@ -16,7 +16,7 @@ nixPkgs = [
 ]
 
 [phases.install]
-cmds = ["composer install --no-dev --no-interaction --prefer-dist"]
+cmds = ["composer install --no-dev --no-interaction --prefer-dist --no-scripts", "npm install"]
 
 [phases.build]
-cmds = ["npm install && npm run build"]
+cmds = ["npm run dev"]
