@@ -1,0 +1,22 @@
+[phases.setup]
+nixPkgs = [
+    "php81",
+    "php81Extensions.gd",
+    "php81Extensions.mbstring",
+    "php81Extensions.mysqlnd",
+    "php81Extensions.pdo_mysql",
+    "php81Extensions.xml",
+    "php81Extensions.bcmath",
+    "php81Extensions.curl",
+    "php81Extensions.zip",
+    "php81Extensions.intl",
+    "php81Packages.composer",
+    "nodejs-18_x",
+    "yarn"
+]
+
+[phases.install]
+cmds = ["composer install --no-dev --no-interaction --prefer-dist"]
+
+[phases.build]
+cmds = ["yarn install", "yarn run production"]
