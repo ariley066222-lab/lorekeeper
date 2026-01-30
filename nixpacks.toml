@@ -22,4 +22,4 @@ cmds = [
 ]
 
 [phases.build]
-cmds = ["npm run dev"]
+cmds = ["NODE_OPTIONS=--openssl-legacy-provider npm run dev"]
