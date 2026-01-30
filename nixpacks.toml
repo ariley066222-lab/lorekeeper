@@ -17,7 +17,8 @@ nixPkgs = [
 [phases.install]
 cmds = [
     "composer install --no-dev --no-interaction --prefer-dist --no-scripts",
-    "npm install"
+    "npm install",
+    "npm install vue-template-compiler@2.6.7 --save-dev --production=false"
 ]
 
 [phases.build]
